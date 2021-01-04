@@ -36,7 +36,7 @@ bin/kafka-topics.sh --list --bootstrap-server localhost:9092
 **3. Start the Producer**
 
 Open another terminal session and run:
-'''
+```
 ./tweet_spark_kafkaproducer.py
 ```
 **4. Start the Consumer**
