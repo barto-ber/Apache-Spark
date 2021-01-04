@@ -6,7 +6,7 @@ A nice project with Streaming Data. It comes from Twitter API, goes through Kafk
 Twitter --> Kafka --> Spark
 '''
 ## Let's start
-**1. Start the Kafka Environment
+**1. Start the Kafka Environment**
 
 NOTE: Your local environment must have Java 8+ installed.
 
@@ -23,7 +23,7 @@ Open another terminal session and run:
 '''
 bin/kafka-server-start.sh config/server.properties
 '''
-**2. Create a topic called: tweets
+**2. Create a topic called: tweets**
 
 Open another terminal session and run:
 '''
@@ -33,25 +33,25 @@ Check if it worked well:
 '''
 bin/kafka-topics.sh --list --bootstrap-server localhost:9092
 '''
-**3. Start the Producer
+**3. Start the Producer**
 
 Open another terminal session and run:
 '''
 ./tweet_spark_kafkaproducer.py
 '''
-**4. Start the Consumer
+**4. Start the Consumer**
 
 Open another terminal session and run:
 '''
 bin/kafka-console-consumer.sh --topic tweets --from-beginning --bootstrap-server localhost:9092
 '''
-**5. Start Spark 
+**5. Start Spark**
 
 Open another terminal session and run:
 '''
 spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.0.1 tweet_spark_streamhandler.py
 '''
-**NOTE:
+**NOTE:**
 Sometimes if you run Spark there will flop some errors. Mostly they have something to do with hadoops clusters. If it will be the case try to "reset" the cluster with following commands:
 
 Stop Spark and Kafka producer first.
