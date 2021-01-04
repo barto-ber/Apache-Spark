@@ -29,11 +29,11 @@ class Streamer(tweepy.StreamListener):
         print(f'[{d.hour}:{d.minute}.{d.second}] --- sending tweet to Kafka')
 
 # put your API keys here
-consumer_key = "hf2J95Ua4CnO7NGNHKbUjNWVI"
-consumer_secret_key = "JchLmHIyndwONXrNWrNTWoJqWUlMc80FVfkOwLMuR3S8c69W4b"
+consumer_key = "HERE"
+consumer_secret_key = "HERE"
 
-access_token = "1329092986802618370-H99cqjROJjgZ5qexTOtPDxqziWzS0F"
-access_token_secret = "i9yG4xufVs3s4z1N4zt2ezny67QYrYjSD9mHGD24TXFvF"
+access_token = "HERE"
+access_token_secret = "HERE"
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret_key)
 auth.set_access_token(access_token, access_token_secret)
