@@ -1,5 +1,5 @@
 # Kafka & Spark Structured Streaming Sentiment Analysis on a Virtual Machine with lubuntu
-<img src="./logo_all_3.png" width="336" height="130" style="float:left"> <img src="./kafka.png" width="500" height="421" style="float:right"> <img src="./producer.png" width="500" height="421" style="float:right"> <img src="./spark.png" width="500" height="421" style="float:right">
+<img src="./logo_all_3.png" width="436" height="169" style="float:left"> <img src="./kafka.png" width="500" height="421" style="float:right"> <img src="./producer.png" width="500" height="421" style="float:right"> <img src="./spark.png" width="500" height="421" style="float:right">
 
 A nice project with Streaming Data. It comes from Twitter API, goes through Kafka to Spark where a sentiment analysis with NLTK Vader is done. For the moment the writing of fata is to Console, but maybe I will expend it to an graphical up-to-date presentation in Dash.
 ```
